@@ -1,0 +1,19 @@
+.custom-table {
+    width: 700px;
+    border-collapse: collapse;
+    margin-left: 30px;
+}
+
+thead th{
+    color:rgb(99, 97, 97);
+}
+
+thead th, tbody td{
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr  {
+    border-top: 1px solid gray;
+    color: black;
+}  
