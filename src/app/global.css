@@ -27,56 +27,58 @@ body {
   color: #333;
   padding: 0;
   margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Configuração para containers */
-.container {
+/* .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-}
+} */
 
 /* Estilo para cabeçalhos */
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
-}
+} */
 
 /* Estilo para links */
-a {
+/* a {
   color: #007bff;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-}
+} */
 
 /* Layout flexível e responsivo */
-.flex {
+/* .flex {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 /* Estilos de cartões ou blocos */
-.card {
+/* .card {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   padding: 1rem;
   margin: 1rem;
-}
+} */
 
 /* Grid básico */
-.grid {
+/* .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
-}
+} */
 
 /* Media Queries */
 
 /* Tablets e dispositivos pequenos */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .container {
     width: 95%;
   }
@@ -84,10 +86,10 @@ a:hover {
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
-}
+} */
 
 /* Smartphones em modo paisagem */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   body {
     font-size: 16px;
   }
@@ -104,10 +106,10 @@ a:hover {
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
-}
+} */
 
 /* Smartphones em modo retrato */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   body {
     font-size: 14px;
   }
@@ -124,4 +126,4 @@ a:hover {
   .grid {
     grid-template-columns: 1fr;
   }
-}
+} */
