@@ -1,0 +1,85 @@
+/******************** Prettier ********************/
+1 - semi: false
+
+O que faz? R: Esta configuração define se o Prettier deve ou não adicionar um ponto e vírgula (;) ao final de cada linha de código.
+Resultado: Com false, o Prettier não adiciona pontos e vírgulas automaticamente no final das linhas. 
+
+Exemplo:
+    Com semi - true: const nome = 'João';
+    Com semi - false: const nome = 'João'
+
+2 - singleQuote: true
+
+O que faz? R: Define se o Prettier deve usar aspas simples (') ou aspas duplas (") para strings.
+Resultado: Com true, o Prettier usará aspas simples para as strings. 
+
+Exemplo:
+    Com singleQuote: true: 'Olá, mundo!'
+    Com singleQuote: false: "Olá, mundo!"
+
+3 - trailingComma: "all"
+
+O que faz? R: Controla a adição de vírgulas no final de objetos, arrays, e outros elementos onde seja possível ter uma vírgula final.
+Resultado: Com "all", o Prettier adiciona uma vírgula ao final de todos os elementos, inclusive o último de uma lista.
+
+Exemplo:
+    const obj = {
+    nome: 'João',
+    idade: 30,
+    }
+Essa configuração facilita a adição ou remoção de itens, uma vez que todos os itens possuem uma vírgula no final.
+
+4 - tabWidth: 2
+
+O que faz? R: Define o número de espaços que uma tabulação equivale.
+Resultado: Com 2, cada nível de indentação no código será representado por 2 espaços. 
+
+Exemplo:
+    function exemplo() {
+      console.log('Indentação com 2 espaços')
+    }
+useTabs: false
+
+O que faz? R: Determina se o Prettier deve usar tabulações (tabs) ou espaços para a indentação.
+Resultado: Com false, o Prettier utilizará espaços para a indentação ao invés de tabs. Isso é geralmente preferido por muitos desenvolvedores para garantir consistência entre diferentes editores e IDEs.
+
+5 - printWidth: 80
+
+O que faz? R: Define a largura máxima da linha de código antes de o Prettier quebrar a linha automaticamente.
+Resultado: Com 80, o Prettier quebra as linhas que excedem 80 caracteres para garantir que o código seja mais legível em telas menores ou ao lado de outras janelas. 
+
+Exemplo:
+  const frase = 'Esta é uma frase longa que será quebrada em várias linhas se ultrapassar 80 caracteres'
+
+6 - endOfLine: "lf"
+
+O que faz? R: Define o caractere de fim de linha a ser usado pelo Prettier.
+Resultado: Com "lf", o Prettier usa "Line Feed" (\n) como o caractere de fim de linha, que é o padrão em sistemas UNIX e Linux, incluindo macOS. Isso evita problemas de inconsistência de fim de linha, especialmente ao trabalhar em diferentes sistemas operacionais.
+
+/******************** ESLINT ********************/
+
+1 - instalando plugins para rodar eslint junto com o prettier:
+  npm install --save-dev eslint-config-prettier eslint-plugin-prettier
+
+2 - adicionei a extensão a seguir e os plugins do prettier pra conectar ambos.
+
+  Antes:
+    {
+      "extends": "next/core-web-vitals"
+    }
+  Depois:
+    {
+      "extends": [
+        "next/core-web-vitals",
+        "plugin:prettier/recommended"
+      ],
+      "plugins": ["prettier"],
+      "rules": {
+        "prettier/prettier": "error"
+      }
+    }
+
+3 - A versão do TypeScript que estamos usando (5.5.4) não é oficialmente suportada pela versão atual do eslint. 
+O suporte oficial é para versões do TypeScript entre 4.7.4 e 5.5.0. Rodei o comando abaixo para ajustar:
+
+  npm install typescript@5.4.x --save-dev

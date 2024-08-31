@@ -1,13 +1,13 @@
-import ContainerContas from '../components/containerContas';
+import ContainerContas from '../components/containerContas'
 
-function Home () {
+function Home() {
   return (
     <main>
       <div>
-        <ContainerContas/>
+        <ContainerContas />
       </div>
     </main>
   )
-};
+}
 
-export default Home;
+export default Home

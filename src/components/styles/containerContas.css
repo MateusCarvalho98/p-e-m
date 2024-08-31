@@ -1,21 +1,19 @@
-
 .containerContas {
+  width: 900px;
+  height: 300px;
 
-    width: 900px;
-    height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    margin-left: 30px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin-left: 30px;
 }
 
 .containerContas h2 {
-    margin: 0 0 10px 20px;
-    font-size: 20px;
-    color:rgb(99, 97, 97);
+  margin: 0 0 10px 20px;
+  font-size: 20px;
+  color: rgb(99, 97, 97);
 }

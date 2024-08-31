@@ -1,17 +1,17 @@
-import React from "react";
-import "./styles/tableContas.css";
+import React from 'react'
+import './styles/tableContas.css'
 
 // Definindo a interface para o tipo de conta
 interface Conta {
-  descricao: string;
-  receitas: string;
-  despesas: string;
-  previsao: string;
+  descricao: string
+  receitas: string
+  despesas: string
+  previsao: string
 }
 
 // Definindo a interface para as props do componente
 interface TableContasProps {
-  contas: Conta[];
+  contas: Conta[]
 }
 
 const TableContas: React.FC<TableContasProps> = ({ contas }) => {
@@ -19,13 +19,13 @@ const TableContas: React.FC<TableContasProps> = ({ contas }) => {
     return contas
       .reduce((acc, conta) => {
         const valor = parseFloat(
-          conta[campo].replace("R$", "").replace(",", ".")
-        );
-        return acc + valor;
+          conta[campo].replace('R$', '').replace(',', '.'),
+        )
+        return acc + valor
       }, 0)
       .toFixed(2)
-      .replace(".", ",");
-  };
+      .replace('.', ',')
+  }
 
   return (
     <table className="custom-table">
@@ -48,16 +48,16 @@ const TableContas: React.FC<TableContasProps> = ({ contas }) => {
         ))}
         <tr>
           <td>Total</td>
-          <td>R$ {calcularTotal("receitas")}</td>
-          <td>R$ {calcularTotal("despesas")}</td>
-          <td>R$ {calcularTotal("previsao")}</td>
+          <td>R$ {calcularTotal('receitas')}</td>
+          <td>R$ {calcularTotal('despesas')}</td>
+          <td>R$ {calcularTotal('previsao')}</td>
         </tr>
       </tbody>
     </table>
-  );
-};
+  )
+}
 
-export default TableContas;
+export default TableContas
 
 // import './styles/tableContas.css';
 
