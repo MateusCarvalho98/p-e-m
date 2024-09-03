@@ -1,1 +1,2 @@
-make lint-fix
+make lint-fix &&
+make prettier
