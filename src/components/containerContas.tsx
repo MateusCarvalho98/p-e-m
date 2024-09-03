@@ -1,4 +1,4 @@
-import TableContas from '../UI/tableContas'
+import TableContas from '@/UI/tableContas'
 import './styles/containerContas.css'
 
 //Added array of bank's acounts. This will be rendered in the table as many acounts as you want
