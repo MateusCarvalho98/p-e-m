@@ -37,6 +37,7 @@
       "make lint",
       "make prettier",
       "git add"
+      
     ]
   }
 }
