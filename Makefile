@@ -1,5 +1,5 @@
 default:
-	@echo Escolha o comando que voce quer executar. Ex.: make check
+	@echo 'Escolha o comando que voce quer executar.' + \ 'Ex.: make check'
 	@echo Lista de comandos:
 	@echo * check - Analisa o codigo estaticamente (usando eslint e prettier)
 	@echo * run - Executa o projeto frontend
