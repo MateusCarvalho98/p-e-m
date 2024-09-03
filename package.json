@@ -35,8 +35,8 @@
   },
   "lint-staged": {
     "*.tsx": [
-      "make lint",
-      "make prettier",
+      "eslint --fix",
+      "prettier --write",
       "git add"
     ]
   }
