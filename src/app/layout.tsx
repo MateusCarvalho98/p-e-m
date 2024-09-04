@@ -4,8 +4,6 @@ import { auth0Config } from '../../auth0-config'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './global.css'
-import Header from '@/UI/header'
-import LogoutButton from '@/UI/button'
 
 const inter = Inter({ subsets: ['latin'] })
 
