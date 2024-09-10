@@ -20,7 +20,6 @@ function Home() {
       <div>
         {!isLoading ? (
           <>
-            <LogoutButton />
             <ContainerContas />
           </>
         ) : (
