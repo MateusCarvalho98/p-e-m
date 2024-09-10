@@ -18,7 +18,7 @@ function Home() {
   return (
     <main>
       <div>
-        {!isLoading ? (
+        {!isLoading && isAuthenticated ? (
           <>
             <ContainerContas />
           </>
